@@ -7,7 +7,7 @@ type AlbumsProps = {};
 
 const AlbumItem = () => {
     return (
-        <div className="relative w-full">
+        <div className="relative w-full overflow-hidden rounded-md">
             <div className="absolute top-2 right-2">
                 <BtnLike />
             </div>
