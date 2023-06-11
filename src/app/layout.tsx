@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 const title = "Template Dailydose Music, by Jungo Team (Dev. Bienfait Shomari)";
 const description =
     "Un Template Nextjs et Typescript inspiré par une image sur Pinterest, par l'équipe Jungo, (Dev, bienfait Shomari)";
+const site = "https://dailydose-gray.vercel.app/";
 export const metadata: Metadata = {
     title: title,
     description: description,
@@ -15,19 +16,34 @@ export const metadata: Metadata = {
     ],
     keywords: ["typescript", "nextjs", "reactjs"],
     openGraph: {
-        url: "https://dailydose-gray.vercel.app/",
+        url: site,
         title: title,
         description: description,
         siteName: title,
         images: [
             {
                 url: "/images/img1.jpg",
-                width: 800,
-                height: 600,
+                width: 400,
+                height: 400,
+                type: ".jpg",
             },
         ],
         locale: "fr-Fr",
         type: "website",
+    },
+    twitter: {
+        title: title,
+        description: description,
+        card: "summary",
+        site: site,
+        images: [
+            {
+                url: "/images/img1.jpg",
+                width: 400,
+                height: 400,
+                type: ".jpg",
+            },
+        ],
     },
 };
 
