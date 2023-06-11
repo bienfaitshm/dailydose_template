@@ -18,7 +18,6 @@ export const metadata: Metadata = {
         url: "https://dailydose-gray.vercel.app/",
         title: title,
         description: description,
-        actors: "Bienfait shomari (Jungo Team)",
         siteName: title,
         images: [
             {
