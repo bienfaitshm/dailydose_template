@@ -7,10 +7,20 @@ import PlayListCard from "@/components/PlayListCard";
 import Albums from "@/components/Albums";
 import PodCast from "@/components/PodCast";
 import Player from "@/components/Player";
+import Opengraph from "@/components/Opengraph";
+
+const description =
+    "Un Template Nextjs et Typescript inspiré par une image sur Pinterest, par l'équipe Jungo, (Dev, bienfait Shomari)";
 
 export default function Home() {
     return (
         <main>
+            <Opengraph
+                title="Template Dailydose Music"
+                description={description}
+                image="./images/img1.jpg"
+                imageType=".jpg"
+            />
             <div className="">
                 <div className="bg-slate-50 max-h-screen fixed left-0 top-0 bottom-0 w-[250px]">
                     <SideBar />
